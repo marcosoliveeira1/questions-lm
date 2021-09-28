@@ -6,17 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test-services": "yarn tsc ./**/*.test.ts --outDir ./tests/  && node ./tests/**/*.test.js"
   },
   "dependencies": {
+    "axios": "^0.21.4",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/react": "17.0.24",
+    "dotenv": "^10.0.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "ts-node": "^10.2.1",
     "typescript": "4.4.3"
   }
 }
